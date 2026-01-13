@@ -1,148 +1,73 @@
-# Smart-Stock-Inventory-Optimization-for-Retail-Stores.
+# Welcome to your SmartStock project
 
-Smart Stock Inventory Optimization for Retail Stores
+## Project info
 
-Backend: Python Django + REST API
+**URL**: https://smartstock.dev/projects/REPLACE_WITH_PROJECT_ID
 
-📌 Overview
+## How can I edit this code?
 
-Smart Stock Inventory Optimization is a backend-driven solution built using Django that helps retail stores efficiently manage and optimize inventory levels.
-The system provides RESTful APIs for handling products, stock updates, supplier data, and demand monitoring. It ensures accurate stock tracking, reduces overstock/understock issues, and improves store decision-making through structured backend logic.
+There are several ways of editing your application.
 
-This backend serves as the core engine for inventory operations, enabling seamless integration with a frontend application (React, Vite, or any UI).
+**Use SmartStock**
 
-🎯 Key Features
-✔️ Product Management API
+Simply visit the [SmartStock Project](https://smartstock.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-Add, edit, delete, and fetch product data
+Changes made via SmartStock will be committed automatically to this repo.
 
-SKU-based identification
+**Use your preferred IDE**
 
-Secure validation and structured responses
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in SmartStock.
 
-✔️ Stock Level Tracking
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Maintain current stock count
+Follow these steps:
 
-Log incoming and outgoing stock
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Auto-alerts for low-stock (configurable threshold)
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-✔️ Supplier Management
+# Step 3: Install the necessary dependencies.
+npm i
 
-Store supplier info
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-Map products to suppliers
+**Edit a file directly in GitHub**
 
-Supports multi-supplier per product
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-✔️ RESTful API Architecture
+**Use GitHub Codespaces**
 
-Built using Django REST Framework (DRF)
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-JSON-based clean and predictable responses
+## What technologies are used for this project?
 
-✔️ CORS Supported
+This project is built with:
 
-Enables smooth connection with frontend (e.g., Vite, React) through proper CORS configuration.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-🏗️ System Architecture
-Frontend (React / Vite App)
-        │
-        │  API Requests (GET/POST/PUT/DELETE)
-        ▼
-Django Backend (REST API)
-   ├── Product Module
-   ├── Stock Module
-   ├── Supplier Module
-   │
-   ├── Serializers (Convert DB → JSON)
-   ├── Views (Business Logic)
-   ├── URLs (API Routing)
-   │
-   ▼
-SQLite / PostgreSQL Database
+## How can I deploy this project?
 
-🧩 Backend Modules Explained
-🔹 1. Models (Database Layer)
+Simply open [SmartStock](https://smartstock.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-Defines tables for Products, Stock, and Suppliers.
+## Can I connect a custom domain to my SmartStock project?
 
-🔹 2. Serializers
+Yes, you can!
 
-Handle data conversion between Django models and JSON for API responses.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-🔹 3. Views
-
-Contain all inventory logic:
-
-stock update logic
-
-purchase/consume operations
-
-safety stock checks
-
-🔹 4. URL Routing
-
-Maps endpoints such as:
-
-/api/products/
-/api/stock/
-/api/suppliers/
-
-🔹 5. Settings Configuration
-
-CORS enabled
-
-Installed REST framework
-
-Database configuration
-
-Security settings
-
-Allowed hosts
-
-⚙️ Technologies Used
-Component	Technology
-Backend Framework	Django 5.2
-API Framework	Django REST Framework
-Database	SQLite (Development)
-Middleware	CORS Middleware
-Language	Python 3.12
-🚀 Installation & Setup
-Clone Repo
-git clone https://github.com/yourusername/smart-stock-inventory.git
-cd smart-stock-inventory
-
-Install Dependencies
-pip install -r requirements.txt
-
-Run Migrations
-python manage.py makemigrations
-python manage.py migrate
-
-Start Server
-python manage.py runserver
-
-📡 API Endpoints (Examples)
-✔️ Get All Products
-GET /api/products/
-
-✔️ Add New Product
-POST /api/products/
-
-✔️ Update Stock
-PUT /api/stock/<id>/
-
-✔️ Supplier List
-GET /api/suppliers/
-
-📌 Future Enhancements
-
-AI-based demand forecasting
-
-Barcode/QR code scanning support
-
-Multi-store inventory support
-
-Admin dashboard for analytics
+Read more here: [Setting up a custom domain](https://docs.smartstock.dev/features/custom-domain#custom-domain)
